@@ -1,0 +1,17 @@
+<h1>Web analytics!</h1>
+
+<table
+  <tr>
+	  <th>Host</th>
+	  <th>Pathname</th>
+	  <th>Visits</th>
+  </tr>
+
+  <% @stats.each do |stat| %>
+    <tr>
+	    <td><%= stat.host %></td>
+	    <td><%= stat.pathname %></td>
+	    <td><%= stat.visits %></td>
+    </tr>
+  <% end %>
+</table>

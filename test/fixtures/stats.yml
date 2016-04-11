@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  host: MyString
+  pathname: MyString
+  averagetime: 2016-04-10 21:27:07
+  visits: 1
+
+two:
+  host: MyString
+  pathname: MyString
+  averagetime: 2016-04-10 21:27:07
+  visits: 1
