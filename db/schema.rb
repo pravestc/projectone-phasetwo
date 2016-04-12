@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20160411022707) do
   create_table "stats", force: :cascade do |t|
     t.string   "host"
     t.string   "pathname"
-    t.datetime "averagetime"
+    t.integer  "averagetime"
     t.integer  "visits"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

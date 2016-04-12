@@ -5,6 +5,7 @@
 	  <th>Host</th>
 	  <th>Pathname</th>
 	  <th>Visits</th>
+	  <th>Average duration (DD:HH:MM:SS)</th>
   </tr>
 
   <% @stats.each do |stat| %>
@@ -12,6 +13,8 @@
 	    <td><%= stat.host %></td>
 	    <td><%= stat.pathname %></td>
 	    <td><%= stat.visits %></td>
+	    <td><%= "%02d:%02d:%02d:%02d" % [stat.averagetime/86400, stat.averagetime/3600%24, stat.averagetime/60%60, stat.averagetime%60]%></td>
+
     </tr>
   <% end %>
 </table>

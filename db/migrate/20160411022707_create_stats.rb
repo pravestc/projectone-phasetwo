@@ -3,7 +3,7 @@ class CreateStats < ActiveRecord::Migration
     create_table :stats do |t|
       t.string :host
       t.string :pathname
-      t.datetime :averagetime
+      t.integer :averagetime
       t.integer :visits
 
       t.timestamps null: false
